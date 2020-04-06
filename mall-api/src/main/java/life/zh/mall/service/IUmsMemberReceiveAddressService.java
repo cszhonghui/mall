@@ -11,6 +11,6 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * @author ZhongHui
  * @since 2020-04-03
  */
-public interface IUmsMemberReceiveAddressService extends IService<UmsMemberReceiveAddress> {
+public interface IUmsMemberReceiveAddressService  {
 
 }

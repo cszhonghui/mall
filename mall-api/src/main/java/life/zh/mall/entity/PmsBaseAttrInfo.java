@@ -1,8 +1,13 @@
 package life.zh.mall.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
+
+import java.beans.Transient;
 import java.io.Serializable;
+import java.util.List;
+
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
@@ -39,6 +44,9 @@ public class PmsBaseAttrInfo implements Serializable {
      * 启用：1 停用：0
      */
     private String isEnabled;
+
+    @TableField(exist = false)
+    private List<PmsBaseAttrValue> attrValueList;
 
 
 }
