@@ -11,5 +11,5 @@ public interface IPmsAttrService {
 
     List<PmsBaseAttrValue> getAttrValueListByAttrId(Long attrId);
 
-    String saveAttrInfo(PmsBaseAttrInfo pmsBaseAttrInfo);
+    String saveOrUpdateAttrInfo(PmsBaseAttrInfo pmsBaseAttrInfo);
 }

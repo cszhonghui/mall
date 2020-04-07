@@ -1,0 +1,23 @@
+package life.zh.mall.manage.controller;
+
+import com.alibaba.dubbo.config.annotation.Reference;
+import life.zh.mall.entity.PmsProductInfo;
+import life.zh.mall.service.IPmsSpuService;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
+
+@RestController
+@CrossOrigin
+public class SpuController {
+    @Reference
+    IPmsSpuService pmsSpuService;
+    @RequestMapping("/spuList")
+    public Object getSpuListByCatalog3Id(Long catalog3Id){
+        List<PmsProductInfo> pmsProductInfoList=pmsSpuService.getSpuListCatalog3Id(catalog3Id);
+        return pmsProductInfoList;
+    }
+}

@@ -32,7 +32,7 @@ public class AttrController {
     @RequestMapping("/saveAttrInfo")
     public String saveAttrInfo(@RequestBody PmsBaseAttrInfo pmsBaseAttrInfo){
         System.out.println(pmsBaseAttrInfo);
-        pmsAttrService.saveAttrInfo(pmsBaseAttrInfo);
+        pmsAttrService.saveOrUpdateAttrInfo(pmsBaseAttrInfo);
         return "success";
     }
 
