@@ -23,7 +23,14 @@ public class PmsAttrServiceImpl implements IPmsAttrService {
     public List<PmsBaseAttrInfo> getAttrInfoListByCatalog3Id(Long catalog3Id) {
         QueryWrapper queryWrapper=new QueryWrapper();
         queryWrapper.eq("catalog3_id",catalog3Id);
-        return pmsBaseAttrInfoMapper.selectList(queryWrapper);
+        List<PmsBaseAttrInfo> pmsBaseAttrInfoList=pmsBaseAttrInfoMapper.selectList(queryWrapper);
+        pmsBaseAttrInfoList.stream().forEach(a->{
+            QueryWrapper queryWrapper1=new QueryWrapper();
+            queryWrapper1.eq("attr_id",a.getId());
+            a.setAttrValueList(pmsBaseAttrValueMapper.selectList(queryWrapper1));
+        });
+
+        return pmsBaseAttrInfoList;
     }
 
     @Override

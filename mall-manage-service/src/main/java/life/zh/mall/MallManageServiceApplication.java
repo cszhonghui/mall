@@ -1,4 +1,4 @@
-package life.zh.mall.manage;
+package life.zh.mall;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;

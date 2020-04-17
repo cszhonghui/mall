@@ -3,6 +3,8 @@ package life.zh.mall.manage.mapper;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import life.zh.mall.entity.PmsSkuSaleAttrValue;
 
+import java.util.Map;
+
 /**
  * <p>
  * sku销售属性值 Mapper 接口

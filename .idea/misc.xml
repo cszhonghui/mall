@@ -13,6 +13,7 @@
         <option value="$PROJECT_DIR$/mall-web-util/pom.xml" />
         <option value="$PROJECT_DIR$/mall-manage-service/pom.xml" />
         <option value="$PROJECT_DIR$/mall-manage-web/pom.xml" />
+        <option value="$PROJECT_DIR$/mall-item-web/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

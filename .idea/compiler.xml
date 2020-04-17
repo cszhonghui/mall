@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="mall-manage-web" />
         <module name="mall-api" />
+        <module name="mall-item-web" />
         <module name="mall-user" />
         <module name="mall-common-util" />
         <module name="mall-manage-service" />
@@ -22,6 +23,7 @@
     <bytecodeTargetLevel>
       <module name="mall-api" target="8" />
       <module name="mall-common-util" target="1.8" />
+      <module name="mall-item-web" target="1.8" />
       <module name="mall-manage-service" target="1.8" />
       <module name="mall-manage-web" target="1.8" />
       <module name="mall-parent" target="1.8" />
@@ -37,6 +39,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="mall-api" options="" />
       <module name="mall-common-util" options="" />
+      <module name="mall-item-web" options="" />
       <module name="mall-manage-service" options="" />
       <module name="mall-manage-web" options="" />
       <module name="mall-service-util" options="" />

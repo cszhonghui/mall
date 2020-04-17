@@ -1,6 +1,7 @@
 package life.zh.mall.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import java.io.Serializable;
 import lombok.Data;
@@ -42,6 +43,9 @@ public class PmsProductSaleAttrValue implements Serializable {
      * 销售属性值名称
      */
     private String saleAttrValueName;
+
+    @TableField(exist = false)
+    private Integer isChecked;
 
 
 }

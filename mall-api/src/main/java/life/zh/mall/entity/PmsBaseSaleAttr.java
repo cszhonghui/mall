@@ -34,4 +34,5 @@ public class PmsBaseSaleAttr implements Serializable {
     private String name;
 
 
+
 }
